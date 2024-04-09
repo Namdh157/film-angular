@@ -1,0 +1,200 @@
+<div class="container my-5 py-5 position-relative text-light ">
+    <div class="title-flim text-light ">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#">Phim lẻ</a></li>
+                <li class="breadcrumb-item"><a href="#">Phim chiếu rạp</a></li>
+                <li class="breadcrumb-item active text-main" aria-current="page">{{ movieDetail.name }}</li>
+            </ol>
+        </nav>
+        <h3>{{ movieDetail.name }}</h3>
+    </div>
+    <div class="row my-3">
+        <div class="col-12 col-lg-12 d-flex justify-content-end align-items-center ">
+            <div class="infor-server-border d-flex align-items-center py-2 my-2" style="border:1px dashed #D980FA">
+                <div class="infor-server mx-2">Bạn xem phim bị lag, giật> Đổi server tại đây <i
+                        class="fa-solid fa-right-long"></i></div>
+                <button class="btn btn-primary ">VIP #1</button>
+                <button class="btn btn-success mx-2">VIP #2</button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-12">
+            <div class="film-img rounded ">
+                <iframe width="100%" height="690px" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="option-film">
+        <div class="icon-option-film">
+            <i class="fa-solid fa-film"></i> Vietsub #1
+        </div>
+        <div class="icon-option-film">
+            <button class="btn btn-danger my-3">Tập full</button>
+        </div>
+        <h2 class="text-danger ">{{ movieDetail.name }}</h2>
+        <h6 class="text-main">Guardians of the galaxy 3</h6>
+        <div class="row">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Thông tin phim</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Diễn viên</button>
+                </div>
+            </nav>
+            <div class="tab-content my-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab">
+                    Nhóm Vệ binh dải Ngân Hà sau khi chia tay Thor và Gamora, đã mua lại xứ Knowhere từ chủ cũ
+                    Tivan, rồi thành lập trụ sở chính của họ ở đây.[a] Không lâu sau đó, họ bị tấn công bởi Adam
+                    Warlock, kẻ mạnh nhất được tạo ra bởi nữ hoàng Sovereign Ayesha. Bởi vì trong phần 2, cha
+                    con
+                    Peter Quill đã đánh tan tành phi đội tàu chiến của Ayesha, nên mụ thù dai và đã giành một
+                    chiếc
+                    kén từ bộ sưu tập Tivan và nhận nuôi đứa bé sinh ra từ đó, đặt tên Adam Warlock và lợi dụng
+                    Adam
+                    làm bảo kê.
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="list-action row">
+                        <div class="col-2 text-center ">
+                            <div class="action-img rounded-circle ">
+                                <img src="./src/assets/img/director.jpg" class="rounded-circle " alt="">
+                            </div>
+                            <div class="action-name mt-3">James Gunn</div>
+                            <div class="action-type fs-8 text-main">Đạo diễn</div>
+                        </div>
+
+                        <div class="col-2 text-center ">
+                            <div class="action-img rounded-circle ">
+                                <img src="./src/assets/img/actor1.jpg" class="rounded-circle " alt="">
+                            </div>
+                            <div class="action-name mt-3">Christ Pratt</div>
+                            <div class="action-type fs-8 text-main">Diễn viên chính</div>
+                        </div>
+                        <div class="col-2 text-center ">
+                            <div class="action-img rounded-circle ">
+                                <img src="./src/assets/img/actor2.jpg" class="rounded-circle " alt="">
+                            </div>
+                            <div class="action-name mt-3">Zoe Salada</div>
+                            <div class="action-type fs-8 text-main">Diễn viên chính</div>
+                        </div>
+                        <div class="col-2 text-center ">
+                            <div class="action-img rounded-circle ">
+                                <img src="./src/assets/img/actor3.jpg" class="rounded-circle " alt="">
+                            </div>
+                            <div class="action-name mt-3">Karen Gillan</div>
+                            <div class="action-type fs-8 text-main">Diễn viên chính</div>
+                        </div>
+                        <div class="col-2 text-center ">
+                            <div class="action-img rounded-circle ">
+                                <img src="./src/assets/img/actor4.jpg" class="rounded-circle " alt="">
+                            </div>
+                            <div class="action-name mt-3">Sea Gunn</div>
+                            <div class="action-type fs-8 text-main">Diễn viên chính</div>
+                        </div>
+                        <div class="col-2 text-center ">
+                            <div class="action-img rounded-circle ">
+                                <img src="./src/assets/img/actor5.jpg" class="rounded-circle " alt="">
+                            </div>
+                            <div class="action-name mt-3">Vin Diesel</div>
+                            <div class="action-type fs-8 text-main">Diễn viên chính</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center my-5">
+            <div class="col-md-12 col-lg-12 col-xl-12 px-0">
+                <div class="card">
+                    <div class="card-body" ng-repeat="comment in comments">
+                        <div class="d-flex flex-start align-items-center">
+                            <img class="rounded-circle shadow-1-strong me-3" src="./src/assets/img/avatar_trong.jpg"
+                                alt="avatar" width="60" height="60" />
+                            <div>
+                                <h6 class="fw-bold text-primary mb-1">{{ comment.user.userName }}</h6>
+                                <p class="text-muted small mb-0">
+                                    {{ comment.time }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-4 pb-2">
+                            {{ comment.comment }}
+                        </p>
+
+                        <div class="small d-flex justify-content-start">
+                            <a href="#!" class="d-flex align-items-center me-3">
+                                <i class="far fa-thumbs-up me-2"></i>
+                                <p class="mb-0">Like</p>
+                            </a>
+                            <a href="#!" class="d-flex align-items-center me-3">
+                                <i class="far fa-comment-dots me-2"></i>
+                                <p class="mb-0">Comment</p>
+                            </a>
+                            <a href="#!" class="d-flex align-items-center me-3">
+                                <i class="fas fa-share me-2"></i>
+                                <p class="mb-0">Share</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body" ng-if="!comments || comments.length === 0">
+                        <h5 class="mt-3 mb-4 pb-2">
+                            Chưa có bình luận cho bộ phim này
+                        </h5>
+                    </div>
+                    <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
+                        <form name="comment" ng-submit="onComment()">
+                            <div class="d-flex flex-start w-100">
+                                <img class="rounded-circle shadow-1-strong me-3" src="./src/assets/img/avatar_trong.jpg"
+                                    alt="avatar" width="40" height="40" />
+                                <div class="form-outline w-100">
+                                    <textarea class="form-control" rows="4" id="comment" ng-model="comment.content"
+                                        style="background: #fff;"></textarea>
+                                    <label class="form-label">Bình luận</label>
+                                </div>
+                            </div>
+                            <div class="float-end mt-2 pt-1">
+                                <button type="submit" class="btn btn-primary btn-sm">Thêm bình luận</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm">Hủy</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mb-3">
+        <h4 class="text-light ">{{ slide.title }}</h4>
+        <div id="carousel" class="carousel carousel-main">
+            <button class="carousel_btn-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel_btn-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="carousel-wrap overflow-hidden">
+                <div class="carousel-move row standard">
+                    <div class="carousel_item col-lg-2 col-md-3 col-sm-4 col-6 text-light position-relative "
+                        ng-repeat="movie in movieRelated" data-id="{{movie.id}}">
+                        <div class="carousel_item-images position-relative ">
+                            <div class="carousel_img-min position-relative fs-8">
+                                <img ng-src="./src/assets/img/{{movie.imgMin}}" class="img-fluid rounded " alt="">
+                                <div class="carousel_img-min-overlay carousel_img-overlay">
+                                    <span>{{movie.update}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel_item-title">
+                            <p>{{movie.name}} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,37 @@
+<div class="container-fluid mt-5 pt-5">
+  <div class="">
+    <h2 class="text-center text-light">Quản lý các bộ phim</h2>
+    <button class="btn btn-success my-3">
+      <a href="#!/admin/movie/create" class="text-light ">Thêm mới</a>
+    </button>
+    <table class="table table-dark table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Category</th>
+          <th scope="col">Update</th>
+          <th scope="col">ImgMin</th>
+          <th scope="col">ImgMax</th>
+          <th scope="col">Video</th>
+          <th scope="col" class="col-1">Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="movie  in movies">
+          <th scope="row">{{ $index + 1 }}</th>
+          <td>{{ movie.name }}</td>
+          <td>{{ movie.category }}</td>
+          <td>{{ movie.update }}</td>
+          <td>{{ movie.imgMin }}</td>
+          <td>{{ movie.imgMax }}</td>
+          <td>{{ movie.video }}</td>
+          <td> 
+            <button class="btn btn-primary" ng-click="editMovie(movie.id)">Sửa</button>
+            <button class="btn btn-danger" ng-click="deleteMovie(movie.id)">Xóa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

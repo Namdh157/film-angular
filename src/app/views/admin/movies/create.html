@@ -1,0 +1,27 @@
+<div class="container col-7 mt-5 pt-5 text-light ">
+    <h3>Thêm mới bộ phim</h3>
+
+    <form name="createMovie">
+        <label>Tên bộ phim</label>
+        <input type="text" name="name" class="form-control" ng-model="create.name" required>
+        <p class="text-danger" ng-if="createMovie.name.$dirty && createMovie.name.$error.required">Không được để trống</p>
+        
+        <label>Thể loại</label>
+        <input type="text" name="category" class="form-control" ng-model="create.category" required>
+
+        <label>Thời lượng</label>
+        <input type="text" name="update" class="form-control" ng-model="create.update" required>
+
+        <label>Ảnh nhỏ</label>
+        <input type="text" name="imgMin" class="form-control" ng-model="create.imgMin" required>
+
+        <label>Ảnh to</label>
+        <input type="text" name="imgMax" class="form-control" ng-model="create.imgMax" required>
+
+        <label>Video</label>
+        <input type="text" name="video" class="form-control" ng-model="create.video" required>
+
+        <button type="submit" ng-click="onCreate()" class="btn btn-warning mt-3">Thêm mới</button>
+        <a href="#!/admin/movies" class="btn btn-danger mt-3">Quay lại d/s</a>
+    </form>
+</div>

@@ -1,0 +1,32 @@
+<div class="container col-7 mt-5 pt-5 text-light ">
+    <h3>Cập nhật phim {{movie.name}} </h3>
+
+    <form name="editMovie" ng-submit="onEdit()">
+        <label>Tên bộ phim</label>
+        <input type="text" name="name" class="form-control" ng-model="edit.name" required>
+        <p class="text-danger" ng-if="editMovie.name.$dirty && editMovie.name.$error.required">Không được để trống</p>
+
+        <label>Thể loại</label>
+        <input type="text" name="category" class="form-control" ng-model="edit.category" required>
+        <p class="text-danger" ng-if="editMovie.category.$dirty && editMovie.category.$error.required">Không được để trống</p>
+
+        <label>Thời lượng</label>
+        <input type="text" name="update" class="form-control" ng-model="edit.update"required>
+        <p class="text-danger" ng-if="editMovie.update.$dirty && editMovie.update.$error.required">Không được để trống</p>
+
+        <label>Ảnh nhỏ</label>
+        <input type="text" name="imgMin" class="form-control" ng-model="edit.imgMin" required>
+        <p class="text-danger" ng-if="editMovie.imgMin.$dirty && editMovie.imgMin.$error.required">Không được để trống</p>
+
+        <label>Ảnh to</label>
+        <input type="text" name="imgMax" class="form-control" ng-model="edit.imgMax"required>
+        <p class="text-danger" ng-if="editMovie.imgMax.$dirty && editMovie.imgMax.$error.required">Không được để trống</p>
+
+        <label>Video</label>
+        <input type="text" name="video" class="form-control" ng-model="edit.video" required>
+        <p class="text-danger" ng-if="editMovie.video.$dirty && editMovie.video.$error.required">Không được để trống</p>
+
+        <button type="submit" class="btn btn-warning mt-3">Thay đổi</button>
+        <a href="#!/admin/movies" class="btn btn-danger mt-3">Quay lại d/s</a>
+    </form>
+</div>

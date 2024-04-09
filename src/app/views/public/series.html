@@ -1,0 +1,45 @@
+<div class="main-content text-light container mt-5 py-5">
+    <div class="title-flim text-light ">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item active text-main" aria-current="page">Phim bộ</li>
+            </ol>
+        </nav>
+        <h3>Phim bộ</h3>
+
+    </div>
+    <section>
+        <div class="list-item-film row ">
+            <div class="item position-relative  col-6 col-md-4 col-sm-6 col-xl-3 mb-5"
+                ng-repeat="movie in movieLists">
+                <a href="#!/detail/{{ convertToSlug(movie.name) }}?id={{ movie.id }}">
+                <div class="item-box w-100">
+                    <div class="item-image position-relative h-75">
+                        <img ng-src="./src/assets/img/{{ movie.imgMax }}" style="height: 216px;"
+                            class="d-block rounded w-100">
+                        <div class="item-image-overlay">
+                            <span class="position-absolute bottom-0 start-0 fs-8 ">{{ movie.update }}</span>
+                        </div>
+                    </div>
+                    <div class="item-title pt-3 pb-1">{{ movie.name }}</div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+    <div class="pagination-flim d-flex justify-content-center ">
+        <nav aria-label="Page navigation example" style="width: fit-content;">
+            <ul class="pagination my-3 rounded " style="border: 1px solid #eaeaea">
+                <li 
+                    ng-repeat="number in pages"
+                    class="page-item">
+                    <a class="page-link text-main"
+                        ng-href="#!/phim-bo?page={{ number}}"
+                        style="background-color: #23252b;">{{ number }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

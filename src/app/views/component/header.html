@@ -1,0 +1,70 @@
+<div class="header" ng-if="isShow">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#">
+                <img src="./src/assets/img/FPT_Polytechnic.png" alt="anh-lo-go" width="90px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#!/">Trang
+                            chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#!/phim-bo">Phim bộ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Khác
+                        </a>
+                        <ul class="dropdown-menu bg-black " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!/lien-he">Liên hệ</a></li>
+                            <li><a class="dropdown-item" href="#!/gop-y">Góp ý</a></li>
+                            <li><a class="dropdown-item" href="#!/hoi-dap">Hỏi đáp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <form class="d-flex me-3">
+                        <div class="input-group flex-nowrap">
+                            <input type="text" class="form-control input " placeholder="Tìm kiếm">
+                            <span class="input-group-text input"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </form>
+                    <button class="btn btn-outline-light rounded-circle mx-3 ">
+                        <i class="fa-solid fa-globe icon"></i>
+                    </button>
+                    <button class="btn btn-outline-light rounded-circle mx-3 "><i
+                            class="fa-solid fa-download"></i>
+                    </button>
+                    <button class="btn btn-outline-light rounded-circle  mx-3 "><i
+                            class="fa-solid fa-rectangle-list"></i>
+                    </button>
+                    <button class="btn btn-outline-light btn-user rounded-circle  mx-3 position-relative ">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="header_icon-hover header_subnav header_user fs-8">
+                            <div class="account" ng-if="account">
+                                <p class="text-main">Chào mừng bạn đến với FPT Polytechnic</p>
+                                <a class="header_user-btn btn btn-danger fs-8" href="#!/admin/movies">Trang quản trị</a>
+                                <a class="btn btn-danger fs-8 my-3" href="#!/profile">Trang cá nhân</a>
+                                <a class="btn btn-danger fs-8 " href="#!/dang-xuat">Đăng xuất</a>
+                            </div>
+                            <div ng-if="!account">
+                                <p class="text-main">Đăng nhập để theo dõi các nội dung mới nhất</p>
+                                <a class="header_user-btn btn btn-danger fs-8" href="#!/dang-nhap">Đăng nhập</a>
+                                <a href="#!/dang-ki" class="btn btn-danger fs-8">Đăng kí</a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

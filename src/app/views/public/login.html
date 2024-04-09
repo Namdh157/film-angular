@@ -1,0 +1,65 @@
+<section class="vh-lg-100 " style="background-color: #95a5a6;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src="./src/assets/img/end_game_tall.jpg" alt="login form" class="img-fluid"
+                                style="border-radius: 1rem 0 0 1rem; height: 100%!important;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+
+                                <form name="login">
+
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <img src="./src/assets/img/logo_web.jpg" alt="" width="200px">
+                                    </div>
+
+                                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Đăng Nhập tài khoản
+                                    </h5>
+
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form2Example17">Tên đăng nhập</label>
+                                        <input type="text" autocomplete="country-name" name="username" required
+                                            ng-model="acc.username"
+                                            class="form-control form-control-lg" />
+                                        <p class="text-danger"
+                                            ng-if="login.username.$dirty && login.username.$error.required">
+                                            Không được để trống
+                                        </p>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form2Example27">Password</label>
+                                        <input type="password" autocomplete="current-password" name="password" required
+                                            ng-model="acc.password"
+                                            class="form-control form-control-lg" />
+                                        <p class="text-danger"
+                                            ng-if="login.password.$dirty && login.password.$error.required">
+                                            Không được để trống
+                                        </p>
+                                    </div>
+
+                                    <div class="pt-1 mb-4">
+                                        <input class="btn btn-lg btn-block btn-danger " ng-click="onSubmit()"
+                                            type="submit" value="Đăng nhập"></input>
+                                    </div>
+
+                                    <a class="small text-muted"
+                                        href="https://www.facebook.com/profile.php?id=100011643516649">Quên mật khẩu</a>
+                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Bạn chưa có tài khoản? <a
+                                            href="#!/dang-ki" style="color: #393f81;">Đăng ký ngay</a></p>
+                                    <a href="#!" class="small text-muted">Điều khoản sử dụng.</a>
+                                    <a href="#!" class="small text-muted">Chính sách bảo mật</a>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

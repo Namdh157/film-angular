@@ -1,0 +1,616 @@
+{
+  "movieList": [
+    {
+      "name": "Biệt đội giải ngân hà 3",
+      "category": "Viễn tưỡng, Hành động, Siêu anh hùng",
+      "update": "2hhhhhh",
+      "imgMin": "galaxy-dung.webp",
+      "imgMax": "banner.webp",
+      "video": "https://www.youtube.com/embed/89aYxQcGGA4",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Doctor Strange 2- PHÙ THỦY TỐI THƯỢNG TRONG ĐA VŨ TRỤ HỖN LOẠN",
+      "category": "Phép thuật, Hành động, Viễn tưởng, Tình yêu",
+      "update": "2h30 phút",
+      "imgMin": "doctor-2-tall.jpg",
+      "imgMax": "doctor-2-large.jpg",
+      "video": "https://www.youtube.com/embed/Rt_UqUm38BI"
+    },
+    {
+      "id": "3",
+      "name": "Người Nhện không còn nhà",
+      "category": "Hành động, Viễn tưởng",
+      "update": "2h30 phút",
+      "imgMin": "no_way_home_tall.jpg",
+      "imgMax": "no_way_home_large.jpg",
+      "video": "https://www.youtube.com/embed/OB3g37GTALc"
+    },
+    {
+      "name": "Người Nhện Xa nhà",
+      "category": "Hành Động, Viễn tưởng",
+      "update": "2h30 phút",
+      "imgMin": "far_for_home_tall.jpg",
+      "imgMax": "far_for_home_large.jpg",
+      "video": "https://www.youtube.com/embed/sx8v7_TpSnM",
+      "id": "4"
+    },
+    {
+      "name": "Người sắt 1",
+      "category": "Hành Động, Siêu anh hùng",
+      "update": "2h30 phút",
+      "imgMin": "iron_man1_tall.jpg",
+      "imgMax": "Iron_man_large.jpg",
+      "video": "https://www.youtube.com/embed/wgwBPIR5Hoc",
+      "id": "5"
+    },
+    {
+      "name": "Siêu Anh Hùng: Hồi Kết",
+      "category": "Viễn Tưỡng, Siêu anh hùng",
+      "update": "2h30 phút",
+      "imgMin": "end_game_tall.jpg",
+      "imgMax": "end_game_large.jpg",
+      "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+      "id": "6"
+    },
+    {
+      "id": "7",
+      "name": "SupermodelMe Revolution (Tôi Là Siêu Mẫu Châu Á 2021)",
+      "category": "Show",
+      "update": "Cập nhật 4",
+      "imgMin": "carousel-img7.webp",
+      "imgMax": "carousel-img7-large.webp",
+      "video": "Teaser_DanhVong.mp4"
+    },
+    {
+      "id": "8",
+      "name": "Mơ Gặp Sư Tử",
+      "category": "Thành thị, Tình yêu",
+      "update": "30",
+      "imgMin": "carousel-img8.webp",
+      "imgMax": "carousel-img8-large.webp",
+      "video": "Teaser_SuMenhCuoiCungCuaThienThan_chuanmoi.mp4"
+    },
+    {
+      "id": "9",
+      "name": "Bảng Xếp Hạng Quốc Vương",
+      "category": "Hoạt hình",
+      "update": "Cập nhật 4",
+      "imgMin": "carousel-img9.webp",
+      "imgMax": "carousel-img9-large.webp",
+      "video": "Teaser_HuongMatTuaKhoiSuong.mp4"
+    },
+    {
+      "id": "10",
+      "name": "Boruto: Naruto hậu sinh khả úy",
+      "category": "Thanh xuân, Tình yêu, Cổ trang",
+      "update": "Cập nhật 222",
+      "imgMin": "carousel-img10.webp",
+      "imgMax": "carousel-img10-large.webp",
+      "video": "Teaser_Mouse_chuanmoi.mp4"
+    },
+    {
+      "id": "11",
+      "name": "Xuân Thu Phong Thần",
+      "category": "Hoạt hình",
+      "update": "Cập nhật 21",
+      "imgMin": "carousel-img11.webp",
+      "imgMax": "carousel-img11-large.webp",
+      "video": "Teaser_KhiEmDepNhat_moi.mp4"
+    },
+    {
+      "id": "12",
+      "name": "Trường Quân Đội Liệt Hỏa ( Học Viện Quân Sự Liệt Hỏa )",
+      "category": "Thanh xuân, Tình yêu",
+      "update": "48",
+      "imgMin": "carousel-img12.webp",
+      "imgMax": "carousel-img12-large.webp",
+      "video": "Teaser_HotelDelLuna_2_moi.mp4"
+    },
+    {
+      "id": "13",
+      "name": "Thanh Gươm Diệt Quỷ·Bản điện ảnh",
+      "category": "",
+      "update": "1",
+      "imgMin": "carousel-img13.webp",
+      "imgMax": "carousel-img13-large.webp",
+      "video": "Teaser_Penthouse3_ep14.mp4"
+    },
+    {
+      "id": "14",
+      "name": "Mouse Kẻ Săn Người",
+      "category": "Tội phạm, Hành động",
+      "update": "20",
+      "imgMin": "carousel-img14.webp",
+      "imgMax": "carousel-img14-large.webp",
+      "video": "Teaser_DanhVong.mp4"
+    },
+    {
+      "id": "15",
+      "name": "One Piece (Đảo Hải Tặc)",
+      "category": "Hoạt hình",
+      "update": "997",
+      "imgMin": "carousel-img15.webp",
+      "imgMax": "carousel-img15-large.webp",
+      "video": "Teaser_SuMenhCuoiCungCuaThienThan_chuanmoi.mp4"
+    },
+    {
+      "id": "16",
+      "name": "Hắc Quản Gia - Phần 1",
+      "category": "Hoạt hình",
+      "update": "25",
+      "imgMin": "carousel-img16.webp",
+      "imgMax": "carousel-img16-large.webp",
+      "video": "Teaser_HuongMatTuaKhoiSuong.mp4"
+    },
+    {
+      "id": "17",
+      "name": "Bảy Viên Ngọc Rồng Siêu Cấp",
+      "category": "Hoạt hình",
+      "update": "131",
+      "imgMin": "carousel-img17.webp",
+      "imgMax": "carousel-img17-large.webp",
+      "video": "Teaser_Mouse_chuanmoi.mp4"
+    },
+    {
+      "id": "18",
+      "name": "Thời Gian Lương Thần Mỹ Cảnh",
+      "category": "Thần tượng, Thành thị, Tình yêu",
+      "update": "31",
+      "imgMin": "carousel-img18.webp",
+      "imgMax": "carousel-img18-large.webp",
+      "video": "Teaser_KhiEmDepNhat_moi.mp4"
+    },
+    {
+      "id": "19",
+      "name": "Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận (Bản TV)",
+      "category": "Hoạt hình",
+      "update": "Cập nhật 3",
+      "imgMin": "carousel-img19.webp",
+      "imgMax": "carousel-img19-large.webp",
+      "video": "Teaser_HotelDelLuna_2_moi.mp4"
+    },
+    {
+      "id": "20",
+      "name": "Bạn Trai Tôi Là Hồ Ly ( Cửu Vĩ Hồ Truyện )",
+      "category": "Thần tượng, Thành thị, Tình yêu",
+      "update": "16",
+      "imgMin": "carousel-img20.webp",
+      "imgMax": "carousel-img20-large.webp",
+      "video": "Teaser_Penthouse3_ep14.mp4"
+    },
+    {
+      "id": "21",
+      "name": "Cẩm Y Chi Hạ",
+      "category": "Tình yêu, Viễn tưởng",
+      "update": "55",
+      "imgMin": "carousel-img21.webp",
+      "imgMax": "carousel-img21-large.webp",
+      "video": "Teaser_DanhVong.mp4"
+    },
+    {
+      "id": "22",
+      "name": "Cẩm Tâm Tựa Ngọc",
+      "category": "Tình yêu, Cổ trang",
+      "update": "45",
+      "imgMin": "carousel-img22.webp",
+      "imgMax": "carousel-img22-large.webp",
+      "video": "Teaser_SuMenhCuoiCungCuaThienThan_chuanmoi.mp4"
+    },
+    {
+      "id": "23",
+      "name": "Thanh Xuân Có Bạn Mùa 2",
+      "category": "Show",
+      "update": "24",
+      "imgMin": "carousel-img23.webp",
+      "imgMax": "carousel-img23-large.webp",
+      "video": "Teaser_HuongMatTuaKhoiSuong.mp4"
+    },
+    {
+      "id": "24",
+      "name": "Nghịch Thiên Kiếm Thần",
+      "category": "动态漫画",
+      "update": "78",
+      "imgMin": "carousel-img24.webp",
+      "imgMax": "carousel-img24-large.webp",
+      "video": "Teaser_Mouse_chuanmoi.mp4"
+    },
+    {
+      "id": "25",
+      "name": "Hóa Ra Em Rất Yêu Anh",
+      "category": "Thanh xuân, Thành thị, Tình yêu",
+      "update": "24",
+      "imgMin": "carousel-img25.webp",
+      "imgMax": "carousel-img25-large.webp",
+      "video": "Teaser_KhiEmDepNhat_moi.mp4"
+    },
+    {
+      "id": "26",
+      "name": "JUJUTSU KAISEN",
+      "category": "Hoạt hình",
+      "update": "24",
+      "imgMin": "carousel-img26.webp",
+      "imgMax": "carousel-img26-large.webp",
+      "video": "Teaser_HotelDelLuna_2_moi.mp4"
+    },
+    {
+      "id": "27",
+      "name": "Như Ý Phương Phi",
+      "category": "Thanh xuân, Tình yêu, Cổ trang",
+      "update": "44",
+      "imgMin": "carousel-img27.webp",
+      "imgMax": "carousel-img27-large.webp",
+      "video": "Teaser_Penthouse3_ep14.mp4"
+    },
+    {
+      "id": "28",
+      "name": "Chiến Cơ Cảnh Giới",
+      "category": "Hoạt hình",
+      "update": "Cập nhật 5",
+      "imgMin": "carousel-img28.webp",
+      "imgMax": "carousel-img28-large.webp",
+      "video": "Teaser_DanhVong.mp4"
+    },
+    {
+      "id": "29",
+      "name": "Thủy Thủ Mặt Trăng Pha Lê",
+      "category": "Hoạt hình",
+      "update": "39",
+      "imgMin": "carousel-img29.webp",
+      "imgMax": "carousel-img29-large.webp",
+      "video": "Teaser_SuMenhCuoiCungCuaThienThan_chuanmoi.mp4"
+    },
+    {
+      "id": "30",
+      "name": "Vú Em Tiên Tôn Đi Ở Rể",
+      "category": "动态漫画",
+      "update": "Cập nhật 71",
+      "imgMin": "carousel-img30.webp",
+      "imgMax": "carousel-img30-large.webp",
+      "video": "Teaser_HuongMatTuaKhoiSuong.mp4"
+    },
+    {
+      "id": "31",
+      "name": "Thiên Vũ Kỷ",
+      "category": "Thần tượng, Thành thị, Tình yêu",
+      "update": "12",
+      "imgMin": "carousel-img31.webp",
+      "imgMax": "carousel-img31-large.webp",
+      "video": "Teaser_Mouse_chuanmoi.mp4"
+    },
+    {
+      "id": "32",
+      "name": "Ở Rể",
+      "category": "Tình yêu, Cổ trang, Viễn tưởng",
+      "update": "35",
+      "imgMin": "carousel-img32.webp",
+      "imgMax": "carousel-img32-large.webp",
+      "video": "Teaser_KhiEmDepNhat_moi.mp4"
+    },
+    {
+      "id": "33",
+      "name": "Bạn Cùng Phòng Của Tôi Là Gumiho",
+      "category": "Giật gân, Viễn tưởng",
+      "update": "Cập nhật 4",
+      "imgMin": "carousel-img33.webp",
+      "imgMax": "carousel-img33-large.webp",
+      "video": "Teaser_HotelDelLuna_2_moi.mp4"
+    },
+    {
+      "id": "34",
+      "name": "Cửa Hàng Tiện Lợi Saet Byul",
+      "category": "Tình yêu, Chiến tranh",
+      "update": "20",
+      "imgMin": "carousel-img34.webp",
+      "imgMax": "carousel-img34-large.webp",
+      "video": "Teaser_Penthouse3_ep14.mp4"
+    },
+    {
+      "id": "35",
+      "name": "Khuynh Thế Cẩm Lân Cốc Vũ Lai",
+      "category": "Tình yêu, Cổ trang",
+      "update": "24",
+      "imgMin": "carousel-img35.webp",
+      "imgMax": "carousel-img35-large.webp",
+      "video": "Teaser_DanhVong.mp4"
+    },
+    {
+      "id": "36",
+      "name": "Làm Trái Tim Em Mỉm Cười",
+      "category": "Tội phạm, Phim hài",
+      "update": "20",
+      "imgMin": "carousel-img36.webp",
+      "imgMax": "carousel-img36-large.webp",
+      "video": "Teaser_SuMenhCuoiCungCuaThienThan_chuanmoi.mp4"
+    },
+    {
+      "id": "37",
+      "name": "Chuyến Tàu Sinh Tử",
+      "category": "Thanh xuân, Tình yêu, Cổ trang",
+      "update": "1",
+      "imgMin": "carousel-img37.webp",
+      "imgMax": "carousel-img37-large.webp",
+      "video": "Teaser_HuongMatTuaKhoiSuong.mp4"
+    },
+    {
+      "id": "38",
+      "name": "Truyền Thuyết Về Ác Nhân",
+      "category": "Thành thị, Tình yêu",
+      "update": "30",
+      "imgMin": "carousel-img38.webp",
+      "imgMax": "carousel-img38-large.webp",
+      "video": "Teaser_Mouse_chuanmoi.mp4"
+    },
+    {
+      "id": "39",
+      "name": "Ác Quỷ Đối Đầu",
+      "category": "Thần tượng, Thành thị, Tình yêu",
+      "update": "16",
+      "imgMin": "carousel-img39.webp",
+      "imgMax": "carousel-img39-large.webp",
+      "video": "Teaser_KhiEmDepNhat_moi.mp4"
+    },
+    {
+      "id": "40",
+      "name": "Sứ Giả Của Chúa",
+      "category": "Thanh xuân, Thành thị, Tình yêu",
+      "update": "24",
+      "imgMin": "carousel-img40.webp",
+      "imgMax": "carousel-img40-large.webp",
+      "video": "Teaser_HotelDelLuna_2_moi.mp4"
+    },
+    {
+      "id": "41",
+      "name": "Nhiệm Vụ Khả Thi",
+      "category": "Tình yêu, Chiến tranh",
+      "update": "20",
+      "imgMin": "carousel-img41.webp",
+      "imgMax": "carousel-img41-large.webp",
+      "video": "Teaser_Penthouse3_ep14.mp4"
+    },
+    {
+      "id": "42",
+      "name": "Nhân Đôi Tình Yêu",
+      "category": "Tình yêu, Cổ trang",
+      "update": "24",
+      "imgMin": "carousel-img42.webp",
+      "imgMax": "carousel-img42-large.webp",
+      "video": "Teaser_DanhVong.mp4"
+    }
+  ],
+  "account": [
+    {
+      "id": "1",
+      "userName": "admin",
+      "password": "admin",
+      "imgUrl": "avatar_trong.jpg"
+    },
+    {
+      "id": "II4Ran2",
+      "userName": "namdhph31308",
+      "password": "123",
+      "imgUrl": "avatar (2).jpg"
+    },
+    {
+      "userName": "abc",
+      "password": "123",
+      "id": "eBvtQtV"
+    }
+  ],
+  "comments": [
+    {
+      "user": {
+        "id": "1",
+        "userName": "admin",
+        "password": "admin"
+      },
+      "comment": "Đỉnh quá ad ơi\n",
+      "movieId": "2",
+      "time": "2024-04-06T14:40:00.000Z",
+      "id": 1
+    },
+    {
+      "user": {
+        "id": "1",
+        "userName": "admin",
+        "password": "admin"
+      },
+      "comment": "lần này được này\n",
+      "movieId": "2",
+      "time": "2024-04-05T17:00:00.000Z",
+      "id": 2
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg",
+        "movieBookmar": {
+          "name": "Siêu Anh Hùng: Hồi Kết",
+          "category": "Viễn Tưỡng, Siêu anh hùng",
+          "update": "2h30 phút",
+          "imgMin": "end_game_tall.jpg",
+          "imgMax": "end_game_large.jpg",
+          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+          "id": "6"
+        }
+      },
+      "comment": "được đấy\n",
+      "movieId": "3",
+      "time": "2024-04-06T17:00:00.000Z",
+      "id": 3
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg",
+        "movieBookmar": {
+          "name": "Siêu Anh Hùng: Hồi Kết",
+          "category": "Viễn Tưỡng, Siêu anh hùng",
+          "update": "2h30 phút",
+          "imgMin": "end_game_tall.jpg",
+          "imgMax": "end_game_large.jpg",
+          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+          "id": "6"
+        }
+      },
+      "comment": "quá đỉnh",
+      "movieId": "3",
+      "time": "2024-04-06T17:00:00.000Z",
+      "id": 4
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg",
+        "movieBookmar": {
+          "name": "Siêu Anh Hùng: Hồi Kết",
+          "category": "Viễn Tưỡng, Siêu anh hùng",
+          "update": "2h30 phút",
+          "imgMin": "end_game_tall.jpg",
+          "imgMax": "end_game_large.jpg",
+          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+          "id": "6"
+        }
+      },
+      "comment": "hay lắm",
+      "movieId": "3",
+      "time": "2024-04-06T17:00:00.000Z",
+      "id": 5
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg",
+        "movieBookmar": {
+          "name": "Siêu Anh Hùng: Hồi Kết",
+          "category": "Viễn Tưỡng, Siêu anh hùng",
+          "update": "2h30 phút",
+          "imgMin": "end_game_tall.jpg",
+          "imgMax": "end_game_large.jpg",
+          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+          "id": "6"
+        }
+      },
+      "comment": "hay hay hay",
+      "movieId": "3",
+      "time": "2024-04-06T17:00:00.000Z",
+      "id": 6
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg",
+        "movieBookmar": {
+          "name": "Siêu Anh Hùng: Hồi Kết",
+          "category": "Viễn Tưỡng, Siêu anh hùng",
+          "update": "2h30 phút",
+          "imgMin": "end_game_tall.jpg",
+          "imgMax": "end_game_large.jpg",
+          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+          "id": "6"
+        }
+      },
+      "comment": "được được",
+      "movieId": "3",
+      "time": "2024-04-06T17:00:00.000Z",
+      "id": 7
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg"
+      },
+      "comment": "hay lắm",
+      "movieId": "3",
+      "time": "2024-04-06T17:00:00.000Z",
+      "id": 8
+    }
+  ],
+  "bookmark": [
+    {
+      "idMovie": {
+        "id": "3",
+        "name": "Người Nhện không còn nhà",
+        "category": "Hành động, Viễn tưởng",
+        "update": "2h30 phút",
+        "imgMin": "no_way_home_tall.jpg",
+        "imgMax": "no_way_home_large.jpg",
+        "video": "https://www.youtube.com/embed/OB3g37GTALc"
+      },
+      "idAccount": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg",
+        "movieBookmar": {
+          "name": "Siêu Anh Hùng: Hồi Kết",
+          "category": "Viễn Tưỡng, Siêu anh hùng",
+          "update": "2h30 phút",
+          "imgMin": "end_game_tall.jpg",
+          "imgMax": "end_game_large.jpg",
+          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+          "id": "6"
+        }
+      },
+      "id": 2
+    },
+    {
+      "idMovie": {
+        "id": "3",
+        "name": "Người Nhện không còn nhà",
+        "category": "Hành động, Viễn tưởng",
+        "update": "2h30 phút",
+        "imgMin": "no_way_home_tall.jpg",
+        "imgMax": "no_way_home_large.jpg",
+        "video": "https://www.youtube.com/embed/OB3g37GTALc"
+      },
+      "idAccount": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg",
+        "movieBookmar": {
+          "name": "Siêu Anh Hùng: Hồi Kết",
+          "category": "Viễn Tưỡng, Siêu anh hùng",
+          "update": "2h30 phút",
+          "imgMin": "end_game_tall.jpg",
+          "imgMax": "end_game_large.jpg",
+          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
+          "id": "6"
+        }
+      },
+      "id": 3
+    },
+    {
+      "idMovie": {
+        "id": "2",
+        "name": "Doctor Strange 2- PHÙ THỦY TỐI THƯỢNG TRONG ĐA VŨ TRỤ HỖN LOẠN",
+        "category": "Phép thuật, Hành động, Viễn tưởng, Tình yêu",
+        "update": "2h30 phút",
+        "imgMin": "doctor-2-tall.jpg",
+        "imgMax": "doctor-2-large.jpg",
+        "video": "https://www.youtube.com/embed/Rt_UqUm38BI"
+      },
+      "idAccount": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg"
+      },
+      "id": 4
+    }
+  ]
+}

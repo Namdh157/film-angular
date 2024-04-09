@@ -1,0 +1,102 @@
+<div class="pt-5">
+    <div class="container-fluid mt-5 pb-5" style="background-color: #2d3436">
+        <div class="container py-3">
+            <h2 class="text-center py-3 text-light ">Hồ sơ tài khoản</h2>
+            <div class="d-flex text-light">
+                <div class="col-3 g-0 border p-2 text-light" style="border-radius: .5rem;">
+                    <div class="col-12 gradient-custom text-center"
+                        style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                        <img ng-src="./src/assets/img/{{ account.imgUrl }}" alt="Avatar"
+                            class="img-fluid my-5 rounded-circle " style="width: 80px;" />
+                        <h5> {{ account.userName }}</h5>
+                        <p>
+                            <span class="badge bg-danger">Quản trị</span>
+                            <span class="badge bg-danger ">Khách hàng</span>
+                        </p>
+                        <i class="far fa-edit mb-5 "></i> sửa hồ sơ
+                    </div>
+                    <div class="col-12 gradient-custom text-start">
+                        <ul class="m-0 p-0 list-unstyled ">
+                            <a href="#!/profile">
+                                <li class="p-2 mb-2 border"> <i class="text-danger  fa-solid fa-user"></i> Tài khoản của
+                                    tôi</li>
+                            </a>
+                            <a href="#!/profile/bookmark">
+                                <li class="p-2 border"> <i class=" text-danger fa-solid fa-film"></i> Bộ phim xem sau
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-9 border ms-4" style="border-radius: .5rem;">
+                    <div class="card m-0 text-light " style="background-color: #4b4b4b; border:none; height: 100%;">
+                        <h4 class="text-center mt-5">Hồ sơ của tôi</h4>
+                        <p class="text-center ">Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                        <hr class="bg-white ">
+                        <div class="row">
+                            <div class="col-7 d-flex flex-column align-items-end">
+                                <div class="mt-2">
+                                    <label for="">Tên tài khoản</label>
+                                    <input type="text" id="name" class="mt-2"
+                                        value="{{ account.userName }}">
+                                </div>
+                                <div class="mt-2">
+                                    <label for="">Email</label>
+                                    <input type="email" id="email" class="mt-2"
+                                        value="abc@gmail.com">
+                                </div>
+                                <div class="mt-2">
+                                    <label for="">Địa chỉ</label>
+                                    <input type="text" id="address" class="mt-2"
+                                        value="Trịnh Văn Bô, Hà Nội">
+                                </div>
+                                <div class="mt-2">
+                                    <label for="">Số điện thoại</label>
+                                    <input type="text" id="phone" class="mt-2"
+                                        value="09xxxxxxxxx">
+                                </div>
+                                <div id="btnSave" class="mt-2">
+                                    <button class="btn btn-lg bg-danger text-light mt-3"
+                                        style="border:none;">Lưu</button>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-items-center">
+                                <img id="imgDetail"
+                                ng-src="./src/assets/img/{{ account.imgUrl }}"
+                                    class="rounded-circle mt-5" width="100" alt="">
+                                <div class="my-2" style="width:max-content">
+                                    <button class="btn btn-secondary" id="img">Chọn
+                                        ảnh</button>
+                                    <input type="file" id="image" hidden>
+                                </div>
+                                <p>Dụng lượng file tối đa 1 MB</p>
+                                <p>Định dạng:.JPEG, .PNG</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const btnImg = document.querySelector('#img');
+    const img = document.querySelector('#image');
+    const imgDetail = document.querySelector('#imgDetail');
+    const id = btnImg.dataset.id;
+    btnImg.addEventListener('click', () => {
+        img.click();
+    })
+    img.addEventListener('change', () => {
+        const file = img.files[0];
+        const reader = new FileReader();
+        reader.onloadend = () => {
+            imgDetail.src = reader.result;
+        }
+        reader.readAsDataURL(file);
+    })
+</script>

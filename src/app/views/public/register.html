@@ -1,0 +1,60 @@
+<section class="h-100 bg-dark">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <form name="register">
+                    <div class="card card-registration">
+                        <div class="row g-0">
+                            <div class="col-xl-6 d-none d-xl-block ">
+                                <img src="./src/assets/img/banner.webp" alt="Ảnh logo"
+                                    style="height: 100%; width: 100%; object-fit: cover;" />
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card-body p-md-5 text-black">
+                                    <div class="logo-form">
+                                        <img src="./src/assets/img/logo_web.jpg" width="150px" class="img-thumbnail "
+                                            alt="">
+                                        <h3 class="mb-5 text-uppercase">Đăng ký tài khoản</h3>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form3Example1m">Tên tài khoản</label>
+                                                <input type="text" name="userName" class="form-control form-control-lg"
+                                                    required ng-model="acc.userName" />
+                                                <p class="text-danger"
+                                                    ng-if="register.userName.$dirty && register.userName.$error.required">
+                                                    Không được để trống
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="form3Example1n">Mật khẩu</label>
+                                                <input type="text" name="password" class="form-control form-control-lg"
+                                                    required ng-model="acc.password" />
+                                                <p class="text-danger"
+                                                    ng-if="register.password.$dirty && register.password.$error.required">
+                                                    Không được để trống
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-around align-items-center pt-2">
+                                        <p style="color: #393f81;">Bạn đã có tài khoản? <a href="#!/dang-nhap"
+                                                style="color: #393f81;">Đăng nhập ngay</a></p>
+                                        <button type="reset" class="btn btn-light btn-lg">Cài lại</button>
+                                        <button type="submit" ng-click="onSubmit()" class="btn btn-lg btn-danger ">Đăng
+                                            ký</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
