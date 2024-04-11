@@ -537,63 +537,69 @@
       "movieId": "3",
       "time": "2024-04-06T17:00:00.000Z",
       "id": 8
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg"
+      },
+      "comment": "hay\n",
+      "movieId": "2",
+      "time": "2024-04-08T17:00:00.000Z",
+      "id": 9
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg"
+      },
+      "comment": "hay\n",
+      "movieId": "2",
+      "time": "2024-04-08T17:00:00.000Z",
+      "id": 10
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg"
+      },
+      "comment": "hay\n",
+      "movieId": "2",
+      "time": "2024-04-08T17:00:00.000Z",
+      "id": 11
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg"
+      },
+      "comment": "hay\n",
+      "movieId": "2",
+      "time": "2024-04-08T17:00:00.000Z",
+      "id": 12
+    },
+    {
+      "user": {
+        "id": "II4Ran2",
+        "userName": "namdhph31308",
+        "password": "123",
+        "imgUrl": "avatar (2).jpg"
+      },
+      "comment": "hay\n",
+      "movieId": "2",
+      "time": "2024-04-08T17:00:00.000Z",
+      "id": 13
     }
   ],
   "bookmark": [
-    {
-      "idMovie": {
-        "id": "3",
-        "name": "Người Nhện không còn nhà",
-        "category": "Hành động, Viễn tưởng",
-        "update": "2h30 phút",
-        "imgMin": "no_way_home_tall.jpg",
-        "imgMax": "no_way_home_large.jpg",
-        "video": "https://www.youtube.com/embed/OB3g37GTALc"
-      },
-      "idAccount": {
-        "id": "II4Ran2",
-        "userName": "namdhph31308",
-        "password": "123",
-        "imgUrl": "avatar (2).jpg",
-        "movieBookmar": {
-          "name": "Siêu Anh Hùng: Hồi Kết",
-          "category": "Viễn Tưỡng, Siêu anh hùng",
-          "update": "2h30 phút",
-          "imgMin": "end_game_tall.jpg",
-          "imgMax": "end_game_large.jpg",
-          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
-          "id": "6"
-        }
-      },
-      "id": 2
-    },
-    {
-      "idMovie": {
-        "id": "3",
-        "name": "Người Nhện không còn nhà",
-        "category": "Hành động, Viễn tưởng",
-        "update": "2h30 phút",
-        "imgMin": "no_way_home_tall.jpg",
-        "imgMax": "no_way_home_large.jpg",
-        "video": "https://www.youtube.com/embed/OB3g37GTALc"
-      },
-      "idAccount": {
-        "id": "II4Ran2",
-        "userName": "namdhph31308",
-        "password": "123",
-        "imgUrl": "avatar (2).jpg",
-        "movieBookmar": {
-          "name": "Siêu Anh Hùng: Hồi Kết",
-          "category": "Viễn Tưỡng, Siêu anh hùng",
-          "update": "2h30 phút",
-          "imgMin": "end_game_tall.jpg",
-          "imgMax": "end_game_large.jpg",
-          "video": "https://www.youtube.com/embed/4sZj4aeYUCA",
-          "id": "6"
-        }
-      },
-      "id": 3
-    },
     {
       "idMovie": {
         "id": "2",
