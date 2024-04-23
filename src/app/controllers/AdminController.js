@@ -1,5 +1,5 @@
-const API_URL = 'http://localhost:3000/movieList';
-const API_URL_ACCOUNT = 'http://localhost:3000/account';
+const API_URL = 'https://data-film-1.onrender.com/movieList';
+const API_URL_ACCOUNT = 'https://data-film-1.onrender.com/account';
 
 function movieController($scope, $http, $location, $routeParams) {
     $scope.allMovies = () => {

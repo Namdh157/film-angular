@@ -1,5 +1,5 @@
 export function getItemData(type, quantity) {
-    var url = 'http://localhost:3000/movieList';
+    var url = 'https://data-film-1.onrender.com/movieList';
     $scope.getItem = () => {
         $http.get(url).then( ($res, $req) => {
             var data = $res.data;

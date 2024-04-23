@@ -1,6 +1,6 @@
 import mainJs from "../../assets/js/main.js";
-const API_URL = 'http://localhost:3000/movieList';
-const API_URL_ACCOUNT = 'http://localhost:3000/account';
+const API_URL = 'https://data-film-1.onrender.com/movieList';
+const API_URL_ACCOUNT = 'https://data-film-1.onrender.com/account';
 const LIMIT_ITEM = 12;
 
 
@@ -277,7 +277,7 @@ function HomeController($scope, $http, $timeout, $rootScope) {
                         idMovie: $res.data,
                         idAccount: account
                     }
-                    $http.post('http://localhost:3000/bookmark', newData).then(($res) => {
+                    $http.post('https://data-film-1.onrender.com/bookmark', newData).then(($res) => {
                         if ($res.status == 201) {
                             alert('Thêm vào xem sau thành công');
                         } else {
@@ -443,7 +443,7 @@ function DetailController($scope, $http, $routeParams, $timeout, $rootScope) {
             }, 1000)
         })
     });
-    $http.get('http://localhost:3000/comments').then(($res) => {
+    $http.get('https://data-film-1.onrender.com/comments').then(($res) => {
         $scope.comments = $res.data.filter((item) => item.movieId == $routeParams.id);
     });
     $scope.onComment = () => {
@@ -463,7 +463,7 @@ function DetailController($scope, $http, $routeParams, $timeout, $rootScope) {
                         new Date().getDate()
                     ),
                 }
-                $http.post('http://localhost:3000/comments', newComment).then(($res) => {
+                $http.post('https://data-film-1.onrender.com/comments', newComment).then(($res) => {
                     if ($res.status === 201) {
                         
                     }

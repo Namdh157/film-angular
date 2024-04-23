@@ -56,12 +56,12 @@ angular.module('film-fpt', ['ngRoute']).config(['$routeProvider', ($routeProvide
         templateUrl: './src/app/views/public/bookmark.html',
         controller: function ($scope, $http, $timeout) {
             $scope.account = JSON.parse(localStorage.getItem('account'));
-            $http.get('http://localhost:3000/bookmark').then(($res) => {
+            $http.get('https://data-film-1.onrender.com/bookmark').then(($res) => {
                 const data = $res.data;
                 $scope.listBookmark = data;
                 $scope.onDelete = (id) => {
                     if (confirm('xác nhận xóa')) {
-                        $http.delete(`http://localhost:3000/bookmark/${id}`).then(($res) => {
+                        $http.delete(`https://data-film-1.onrender.com/bookmark/${id}`).then(($res) => {
                             if($res.status == 200) {
                                 $scope.listBookmark = data;
                             } else {
@@ -75,7 +75,7 @@ angular.module('film-fpt', ['ngRoute']).config(['$routeProvider', ($routeProvide
                     }
                 }
                 $timeout(() => {
-                    $http.get('http://localhost:3000/movieList').then(($res) => {
+                    $http.get('https://data-film-1.onrender.com/movieList').then(($res) => {
                         const datas = $res.data
 
                         function getMovieList(data, type, quantity = 30) {
