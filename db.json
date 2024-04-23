@@ -408,7 +408,7 @@
       "comment": "Đỉnh quá ad ơi\n",
       "movieId": "2",
       "time": "2024-04-06T14:40:00.000Z",
-      "id": 1
+      "id": "1"
     },
     {
       "user": {
@@ -419,7 +419,7 @@
       "comment": "lần này được này\n",
       "movieId": "2",
       "time": "2024-04-05T17:00:00.000Z",
-      "id": 2
+      "id": "2"
     },
     {
       "user": {
@@ -440,7 +440,7 @@
       "comment": "được đấy\n",
       "movieId": "3",
       "time": "2024-04-06T17:00:00.000Z",
-      "id": 3
+      "id": "3"
     },
     {
       "user": {
@@ -461,7 +461,7 @@
       "comment": "quá đỉnh",
       "movieId": "3",
       "time": "2024-04-06T17:00:00.000Z",
-      "id": 4
+      "id": "4"
     },
     {
       "user": {
@@ -482,7 +482,7 @@
       "comment": "hay lắm",
       "movieId": "3",
       "time": "2024-04-06T17:00:00.000Z",
-      "id": 5
+      "id": "5"
     },
     {
       "user": {
@@ -503,7 +503,7 @@
       "comment": "hay hay hay",
       "movieId": "3",
       "time": "2024-04-06T17:00:00.000Z",
-      "id": 6
+      "id": "6"
     },
     {
       "user": {
@@ -524,7 +524,7 @@
       "comment": "được được",
       "movieId": "3",
       "time": "2024-04-06T17:00:00.000Z",
-      "id": 7
+      "id": "7"
     },
     {
       "user": {
@@ -536,7 +536,7 @@
       "comment": "hay lắm",
       "movieId": "3",
       "time": "2024-04-06T17:00:00.000Z",
-      "id": 8
+      "id": "8"
     },
     {
       "user": {
@@ -548,7 +548,7 @@
       "comment": "hay\n",
       "movieId": "2",
       "time": "2024-04-08T17:00:00.000Z",
-      "id": 9
+      "id": "9"
     },
     {
       "user": {
@@ -560,7 +560,7 @@
       "comment": "hay\n",
       "movieId": "2",
       "time": "2024-04-08T17:00:00.000Z",
-      "id": 10
+      "id": "10"
     },
     {
       "user": {
@@ -572,7 +572,7 @@
       "comment": "hay\n",
       "movieId": "2",
       "time": "2024-04-08T17:00:00.000Z",
-      "id": 11
+      "id": "11"
     },
     {
       "user": {
@@ -584,7 +584,7 @@
       "comment": "hay\n",
       "movieId": "2",
       "time": "2024-04-08T17:00:00.000Z",
-      "id": 12
+      "id": "12"
     },
     {
       "user": {
@@ -596,27 +596,27 @@
       "comment": "hay\n",
       "movieId": "2",
       "time": "2024-04-08T17:00:00.000Z",
-      "id": 13
+      "id": "13"
     }
   ],
   "bookmark": [
     {
+      "id": "d62a",
       "idMovie": {
-        "id": "2",
-        "name": "Doctor Strange 2- PHÙ THỦY TỐI THƯỢNG TRONG ĐA VŨ TRỤ HỖN LOẠN",
-        "category": "Phép thuật, Hành động, Viễn tưởng, Tình yêu",
-        "update": "2h30 phút",
-        "imgMin": "doctor-2-tall.jpg",
-        "imgMax": "doctor-2-large.jpg",
-        "video": "https://www.youtube.com/embed/Rt_UqUm38BI"
+        "id": "8",
+        "name": "Mơ Gặp Sư Tử",
+        "category": "Thành thị, Tình yêu",
+        "update": "30",
+        "imgMin": "carousel-img8.webp",
+        "imgMax": "carousel-img8-large.webp",
+        "video": "Teaser_SuMenhCuoiCungCuaThienThan_chuanmoi.mp4"
       },
       "idAccount": {
-        "id": "II4Ran2",
         "userName": "namdhph31308",
         "password": "123",
-        "imgUrl": "avatar (2).jpg"
-      },
-      "id": 4
+        "imgUrl": "avatar (2).jpg",
+        "id": "II4Ran2"
+      }
     }
   ]
 }
