@@ -11,17 +11,17 @@
         </div>
         <div class="billboard_overlay"></div>
         <div class="billboard_content row">
-            <div class="billboard_content_main col-3">
-                <img src="./src/assets/img/galaxy-logo.png" alt="logo-film" width="360px">
-                <div class="billboard_content_main_infor fs-8">
+            <div class="billboard_content_main col-4">
+                <img src="./src/assets/img/galaxy-logo.png" class="w-100 " alt="logo-film">
+                <div class="billboard_content_main_infor fs-8 d-none d-md-block  d-lg-block ">
                     <span>5-5-2023</span>
                     <span>2 tiếng 30 phút</span>
                 </div>
-                <div class="billboard_content_main_description fs-8">
+                <div class="billboard_content_main_description fs-8 d-none d-md-block  d-lg-block ">
                     Tiếp tục cuộc hành trình sau khi chia tay Thor, liệu điều gì xảy xa tiếp đến với đội vệ
                     binh...
                 </div>
-                <div class="billboard_content_main_btn mt-3">
+                <div class="billboard_content_main_btn mt-md-3">
                     <div class="btn_play btn btn-danger btn-billboard rounded-circle " id="btn-play">
                         <i class="fa-solid fa-play"></i>
                     </div>
@@ -44,6 +44,8 @@
     </div>
 </div>
 
+
+
 <div class="container-fluid position-relative container-slides pb-5">
     <div class="container mx-auto ">
         <section class="mb-3" ng-repeat="slide in movieLists">
@@ -56,13 +58,9 @@
                     <i class="fas fa-chevron-right"></i>
                 </button>
                 <div class="carousel-wrap overflow-hidden ">
-                    <div class="carousel-move row standard"
-                        ng-if="$index !== 2 && $index !== 4"
-                        >
-                        <div class="carousel_item carousel_item-standard col-lg-2 col-md-3 col-sm-4 col-6 text-light position-relative "
-                            ng-repeat="movie in slide.movies" 
-                            data-id="{{movie.id}}"
-                            >
+                    <div class="carousel-move row standard" ng-if="$index !== 2 && $index !== 4">
+                        <div class="carousel_item carousel_item-standard col-lg-2 col-md-3 col-sm-4 col-4 text-light position-relative "
+                            ng-repeat="movie in slide.movies" data-id="{{movie.id}}">
                             <div class="carousel_item-images position-relative ">
                                 <div class="carousel_img-min position-relative fs-8">
                                     <img ng-src="./src/assets/img/{{movie.imgMin}}" class="img-fluid rounded " alt="">
@@ -81,7 +79,8 @@
                                             <div class="btn_play btn btn-danger btn-img-rank rounded-circle ">
                                                 <i class="fa-solid fa-play"></i>
                                             </div>
-                                            <div class="btn-bookmark btn ms-3 btn-light rounded-circle " ng-click="addBookmark($event, movie.id)">
+                                            <div class="btn-bookmark btn ms-3 btn-light rounded-circle "
+                                                ng-click="addBookmark($event, movie.id)">
                                                 <i class="fa-regular fa-bookmark icon-bookmark">
                                                     <i class="fa-solid fa-plus icon-bookmark-plus ">
                                                     </i>
@@ -96,15 +95,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container banner-vip" ng-if="$index == 3" style="background: url(./src/assets/img/banner-vip.jpg) center center / cover no-repeat;" data-bs-toggle="modal" data-bs-target="#exampleModal"></div>
+                    <div class="container banner-vip" ng-if="$index == 3"
+                        style="background: url(./src/assets/img/banner-vip.jpg) center center / cover no-repeat;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal"></div>
                     <!-- slide index-2 -->
-                    <div class="carousel-move row"
-                        ng-if="$index == 2"
-                        >
-                        <div class="carousel_item item-rank col-lg-3 col-md-4 col-sm-4 col-6 text-light position-relative "
-                            ng-repeat="movie in slide.movies" 
-                            data-id="{{movie.id}}"
-                            >
+                    <div class="carousel-move row" ng-if="$index == 2">
+                        <div class="carousel_item item-rank col-lg-3 col-md-4 col-sm-6 col-6 text-light position-relative "
+                            ng-repeat="movie in slide.movies" data-id="{{movie.id}}">
                             <div class="card-img position-relative ">
                                 <img ng-src="./src/assets/img/{{movie.imgMax}}" class="card-img-top" height="166px">
                                 <div class="card-img-overlay p-1 d-flex justify-content-end align-items-end ">
@@ -130,61 +127,54 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        <!-- slide index-4 -->
-                    <div class="carousel-move row"
-                    ng-if="$index == 4"
-                    >
-                    <div class="carousel_item col-lg-2 col-md-3 col-sm-4 col-6 text-light position-relative p-0"  
-                        ng-repeat="movie in slide.movies"
-                        data-id="{{movie.id}}"
-                        >
-                        <div class="item-box w-100 coming-soon-box">
-                            <div class="coming-soon-top pb-4">
-                                <div class="position-relative mt-4 mb-2">
-                                    <div class="progress"
-                                        style="height: 2px;background-color: rgb(45, 47, 52);"></div>
-                                    <button type="button"
-                                        class="position-absolute top-0 start-50 translate-middle btn btn-sm rounded-pill"
-                                        style="width: 1rem; height:1rem; background-color: rgb(130, 131, 135);">
-                                    </button>
+                    </div>
+                    <!-- slide index-4 -->
+                    <div class="carousel-move row" ng-if="$index == 4">
+                        <div class="carousel_item col-lg-2 col-md-3 col-sm-4 col-6 text-light position-relative p-0"
+                            ng-repeat="movie in slide.movies" data-id="{{movie.id}}">
+                            <div class="item-box w-100 coming-soon-box">
+                                <div class="coming-soon-top pb-4">
+                                    <div class="position-relative mt-4 mb-2">
+                                        <div class="progress" style="height: 2px;background-color: rgb(45, 47, 52);">
+                                        </div>
+                                        <button type="button"
+                                            class="position-absolute top-0 start-50 translate-middle btn btn-sm rounded-pill"
+                                            style="width: 1rem; height:1rem; background-color: rgb(130, 131, 135);">
+                                        </button>
+                                    </div>
+                                    <div class="item-date-coming-soon d-flex flex-column align-items-center text-main">
+                                        <p class="fs-8 m-0">26-03</p>
+                                        <p class="fs-8 m-0">Thứ Ba</p>
+                                    </div>
                                 </div>
-                                <div
-                                    class="item-date-coming-soon d-flex flex-column align-items-center text-main">
-                                    <p class="fs-8 m-0">26-03</p>
-                                    <p class="fs-8 m-0">Thứ Ba</p>
-                                </div>
-                            </div>
-                            <div class="coming-soon-bottom mx-2">
-                                <div class="item-image position-relative h-75">
-                                    <img ng-src="./src/assets/img/{{movie.imgMin}}" style="height: 236px;"
-                                        class="d-block rounded w-100">
-                                    <div
-                                        class="card-img-overlay p-1 d-flex justify-content-end align-items-end ">
-                                        <div class="card-img-overlay-btn">
-                                            <div
-                                                class="btn_play btn btn-danger btn-img-rank rounded-circle ">
-                                                <i class="fa-solid fa-play"></i>
-                                            </div>
-                                            <div class="btn-bookmark btn ms-3 btn-light rounded-circle ">
-                                                <i class="fa-regular fa-bookmark icon-bookmark">
-                                                    <i class="fa-solid fa-plus icon-bookmark-plus ">
+                                <div class="coming-soon-bottom mx-2">
+                                    <div class="item-image position-relative h-75">
+                                        <img ng-src="./src/assets/img/{{movie.imgMin}}" style="height: 236px;"
+                                            class="d-block rounded w-100">
+                                        <div class="card-img-overlay p-1 d-flex justify-content-end align-items-end ">
+                                            <div class="card-img-overlay-btn">
+                                                <div class="btn_play btn btn-danger btn-img-rank rounded-circle ">
+                                                    <i class="fa-solid fa-play"></i>
+                                                </div>
+                                                <div class="btn-bookmark btn ms-3 btn-light rounded-circle ">
+                                                    <i class="fa-regular fa-bookmark icon-bookmark">
+                                                        <i class="fa-solid fa-plus icon-bookmark-plus ">
+                                                        </i>
                                                     </i>
-                                                </i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="item-title pt-3 pb-1 ">{{movie.name}}</div>
                                 </div>
-                                <div class="item-title pt-3 pb-1 ">{{movie.name}}</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    </div>
-                </div>
             </div>
-        </section>
     </div>
+    </section>
+</div>
 </div>
 <!-- Modal VIp -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

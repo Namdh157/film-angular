@@ -2,18 +2,18 @@
     <div class="container-fluid mt-5 pb-5" style="background-color: #2d3436">
         <div class="container py-3">
             <h2 class="text-center py-3 text-light ">Danh sách xem sau</h2>
-            <div class="d-flex">
-                <div class="col-3 g-0 border p-2 text-light" style="border-radius: .5rem;">
+            <div class="d-md-flex d-block">
+                <div class="col-md-3 col-12 g-0 border p-2 text-light profile-standard" style="border-radius: .5rem;">
                     <div class="col-12 gradient-custom text-center"
                         style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
                         <img ng-src="./src/assets/img/{{ account.imgUrl }}" alt="Avatar"
-                            class="img-fluid my-5 rounded-circle " style="width: 80px;" />
+                            class="img-fluid my-md-5 rounded-circle " style="width: 80px;" />
                         <h5> {{ account.userName }}</h5>
                         <p>
                             <span class="badge bg-danger">Quản trị</span>
                             <span class="badge bg-danger ">Khách hàng</span>
                         </p>
-                        <i class="far fa-edit mb-5 "></i> sửa hồ sơ
+                        <i class="far fa-edit mb-md-5 "></i> sửa hồ sơ
                     </div>
                     <div class="col-12 gradient-custom text-start">
                         <ul class="m-0 p-0 list-unstyled ">
@@ -28,19 +28,19 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-9 border ms-3" style="border-radius: .5rem;">
+                <div class="col-md-9 col-12 border ms-md-3 mt-3 mt-md-0" style="border-radius: .5rem;">
                     <div class="card h-100 pt-4" style="background-color: #4b4b4b; border:none;">
-                        <div ng-if="!listBookmark || listBookmark.length === 0">
-                            <h3 class="text-center p-5 text-light ">Không có bộ phim nào</h3>
+                        <div ng-if="!listBookmark || listBookmark.length === 0" >
+                            <h3 class="text-center p-md-5 p-3 text-light f-sm-8">Không có bộ phim nào</h3>
                             <div class="text-center">
-                                <h3 class="text-info">
+                                <h3 class="text-info f-sm-8">
                                     <a href="#!/">Xem ngay nào <i class="fa-solid fa-right-long"></i> </a>
                                 </h3>
                             </div>
                         </div>
                         <div ng-if="listBookmark && listBookmark.length > 0">
                             <h4 class="text-light text-center my-3">Bộ phim xem sau</h4>
-                            <div class="card-block">
+                            <div class="card-block f-sm-8">
                                 <div class="dt-responsive table-responsive mx-2 rounded ">
                                     <table class="table  table-bordered nowrap">
                                         <thead>
@@ -72,7 +72,6 @@
                                                 </td>
                                             </tr>
                                         </tbody>
-
                                     </table>
                                 </div>
                             </div>

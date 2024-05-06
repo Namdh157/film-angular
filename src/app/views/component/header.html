@@ -1,13 +1,12 @@
 <div class="header" ng-if="isShow">
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg p-lg-0">
         <div class="container-fluid p-0">
             <a class="navbar-brand" href="#">
-                <img src="./src/assets/img/FPT_Polytechnic.png" alt="anh-lo-go" width="90px">
+                <img src="./src/assets/img/FPT_Polytechnic.png" alt="anh-lo-go" width="60px">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="btn text-light fs-3 navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-lg-0 ">
@@ -19,8 +18,8 @@
                         <a class="nav-link text-white" href="#!/phim-bo">Phim bộ</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Khác
                         </a>
                         <ul class="dropdown-menu bg-black " aria-labelledby="navbarDropdown">
@@ -34,15 +33,13 @@
                     <form class="d-flex me-3">
                         <div class="input-group flex-nowrap">
                             <input type="text" class="form-control input " placeholder="Tìm kiếm">
-                            <span class="input-group-text input"><i
-                                    class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="input-group-text input"><i class="fa-solid fa-magnifying-glass"></i></span>
                         </div>
                     </form>
                     <button class="btn btn-outline-light rounded-circle mx-3 ">
                         <i class="fa-solid fa-globe icon"></i>
                     </button>
-                    <button class="btn btn-outline-light rounded-circle mx-3 "><i
-                            class="fa-solid fa-download"></i>
+                    <button class="btn btn-outline-light rounded-circle mx-3 "><i class="fa-solid fa-download"></i>
                     </button>
                     <button class="btn btn-outline-light rounded-circle  mx-3 "><i
                             class="fa-solid fa-rectangle-list"></i>
@@ -67,4 +64,137 @@
             </div>
         </div>
     </nav>
+</div>
+
+<div class="offcanvas offcanvas-start" style="z-index: 1111; background-color: rgb(33, 35, 43);" tabindex="-1"
+    id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header text-light  d-flex justify-content-between ">
+        <div class="header-information d-flex align-items-center " ng-if="account">
+            <img ng-src="./src/assets/img/{{account.imgUrl}}" class="img-thumbnail " alt="anh-lo-go" width="90px">
+            <h5 class="offcanvas-title mx-3" id="offcanvasExampleLabel">{{ account.userName }}</h5>
+            <a href="#!dang-xuat" data-bs-dismiss="offcanvas">Đăng xuất</a>
+        </div>
+        <div class="d-flex justify-content-between" ng-if="!account">
+            <i class="fa-regular fa-user fs-2"></i>
+            <a href="#!dang-nhap" class="mx-2 text-light nav-link" data-bs-dismiss="offcanvas">Đăng nhập /</a>
+            <a href="#!dang-ki" class="text-light nav-link" data-bs-dismiss="offcanvas">Đăng ký</a>
+        </div>
+        <i class="fa-regular fa-circle-xmark fs-2" data-bs-dismiss="offcanvas"></i>
+    </div>
+    <div class="offcanvas-body">
+        <div class="nav text-light ">
+            <ul class="nav flex-column w-100 ">
+                <li class="nav-item navs">
+                    <h5 class="">
+                        Cài đặt cá nhân
+                        <i class="down-icon fas fa-chevron-down"></i>
+                        <i class="up-icon fas fa-chevron-up"></i>
+                    </h5>
+                    <div class="navbar_sub-menu">
+                        <p>
+                            <a href="#!" data-bs-dismiss="offcanvas">Danh sách phim đã xem</a>
+                        </p>
+                        <p>
+                            <a href="#!profile/bookmark" data-bs-dismiss="offcanvas">Danh sách phim yêu thích</a>
+                        </p>
+                        <p>
+                            <a href="">Bản dịch phụ đề</a>
+                        </p>
+                        <p>
+                            <a href="#!profile" data-bs-dismiss="offcanvas">Cài đặt cá nhân</a>
+                        </p>
+                        <p>
+                            <a href="">Tiếng Việt</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="nav-item navs">
+                    <h5 class="navbar_menu-item-title">
+                        Danh sách phim của tôi
+                        <i class="down-icon fas fa-chevron-down"></i>
+                        <i class="up-icon fas fa-chevron-up"></i>
+                    </h5>
+                    <div class="navbar_sub-menu">
+                        <p>
+                            <a href="#!profile/bookmark" data-bs-dismiss="offcanvas">Danh sách phim yêu thích</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="nav-item navs">
+                    <h5 class="nav-item-title">
+                        Giới thiệu về chúng tôi
+                        <i class="down-icon fas fa-chevron-down"></i>
+                        <i class="up-icon fas fa-chevron-up"></i>
+                    </h5>
+                    <div class="navbar_sub-menu">
+                        <p>
+                            <a href="">Thông tin công ty</a>
+                        </p>
+                        <p>
+                            <a href="">Giới thiệu dịch vụ sản phẩm</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="nav-item navs">
+                    <h5 class="nav-item-title">
+                        Hợp tác
+                        <i class="down-icon fas fa-chevron-down"></i>
+                        <i class="up-icon fas fa-chevron-up"></i>
+                    </h5>
+                    <div class="navbar_sub-menu">
+                        <p>
+                            <a href="">Đăng quảng cáo</a>
+                        </p>
+                        <p>
+                            <a href="">Quan hệ kinh doanh</a>
+                        </p>
+                        <p>
+                            <a href="">Hợp tác cài đặt trước</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="nav-item navs">
+                    <h5 class="nav-item-title">
+                        Hỗ trợ và giúp đỡ
+                        <i class="down-icon fas fa-chevron-down"></i>
+                        <i class="up-icon fas fa-chevron-up"></i>
+                    </h5>
+                    <div class="navbar_sub-menu">
+                        <p>
+                            <a href="">Phản ánh ý kiến</a>
+                        </p>
+                        <p>
+                            <a href="">Trung tâm phản hồi bảo mật</a>
+                        </p>
+                        <p>
+                            <a href="">Câu hỏi thường gặp</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="nav-item navs">
+                    <h5 class="navbar_menu-item-title">
+                        Điều khoản dịch vụ
+                        <i class="down-icon fas fa-chevron-down"></i>
+                        <i class="up-icon fas fa-chevron-up"></i>
+                    </h5>
+                    <div class="navbar_sub-menu">
+                        <p>
+                            <a href="">Điều khoản quyền riêng tư</a>
+                        </p>
+                        <p>
+                            <a href="">Điều khoản sử dụng</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center w-100 mt-3">
+                <a href="" class="d-inline-block mx-3">
+                    <img src="./src/assets//img/Apple.png" alt="" width="120px">
+                </a>
+                <a href="" class="d-inline-block ">
+                    <img src="./src/assets//img/Google.png" alt="" width="120px">
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

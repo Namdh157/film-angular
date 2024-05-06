@@ -28,13 +28,18 @@
         <button class="backtop-btn" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
             <i class="fas fa-chevron-up"></i>
         </button>
+        <!-- loading -->
         <div class="view-content" ng-view>
 
+        </div>
+        <div class="container-fluid" id="loader">
+            <span class="loader"></span>
         </div>
 
         <footer-component></footer-component>
         <modal-detail-component></modal-detail-component>
         <toast-component></toast-component>
+        
     </div>
 
     <script type="module" src="main.module.js"></script>

@@ -34,8 +34,8 @@ function moviesDetail(data, id) {
         `;
     });
     return `
-        <div class="player-area d-flex ">
-            <div class="play-area-video col-9">
+        <div class="player-area d-xl-flex ">
+            <div class="play-area-video col-12 col-xl-9">
                 <iframe width="100%" height="600px" 
                     loading="lazy"
                     src="${movie.video}"
@@ -44,7 +44,7 @@ function moviesDetail(data, id) {
                     allowfullscreen>
                 </iframe>
             </div>
-            <div class="play-area-episode col-3">
+            <div class="play-area-episode col-xl-3 col-12 pt-1">
                 <h5 class="text-center my-3">${movie.name}</h5>
                 <div class="play-area-tab row ms-0 justify-content-around ">
                     <a href="#!/detail/${convertToSlug(movie.name)}?id=${movie.id}" id="click-close" class="btn text-light col-4 tooltip-test"
@@ -60,8 +60,8 @@ function moviesDetail(data, id) {
                 </div>
             </div>
         </div>
-        <div class="player-content row">
-            <div class="player-content-left col-9 pe-3 fs-6 ">
+        <div class="player-content row d-block d-xl-flex">
+            <div class="player-content-left col-12 col-xl-9 pe-3 fs-6 ">
                 <div class="player-content-infor my-4">
                     <h3>${movie.name}</h3>
                     <div class="player-content-update">
@@ -102,7 +102,7 @@ function moviesDetail(data, id) {
                             người xem cảm thấy thú vị và lôi cuốn...
                         </p>
                         <div class="list-action row">
-                            <div class="col-2 text-center ">
+                            <div class="col-md-2 col-4 text-center ">
                                 <div class="action-img rounded-circle ">
                                     <img src="./src/assets/img/director.jpg" class="rounded-circle " alt="">
                                 </div>
@@ -110,35 +110,35 @@ function moviesDetail(data, id) {
                                 <div class="action-type fs-8 text-main">Đạo diễn</div>
                             </div>
 
-                            <div class="col-2 text-center ">
+                            <div class="col-md-2 col-4 text-center ">
                                 <div class="action-img rounded-circle ">
                                     <img src="./src/assets/img/actor1.jpg" class="rounded-circle " alt="">
                                 </div>
                                 <div class="action-name mt-3">Christ Pratt</div>
                                 <div class="action-type fs-8 text-main">Diễn viên chính</div>
                             </div>
-                            <div class="col-2 text-center ">
+                            <div class="col-md-2 col-4 text-center ">
                                 <div class="action-img rounded-circle ">
                                     <img src="./src/assets/img/actor2.jpg" class="rounded-circle " alt="">
                                 </div>
                                 <div class="action-name mt-3">Zoe Salada</div>
                                 <div class="action-type fs-8 text-main">Diễn viên chính</div>
                             </div>
-                            <div class="col-2 text-center ">
+                            <div class="col-md-2 col-4 text-center ">
                                 <div class="action-img rounded-circle ">
                                     <img src="./src/assets/img/actor3.jpg" class="rounded-circle " alt="">
                                 </div>
                                 <div class="action-name mt-3">Karen Gillan</div>
                                 <div class="action-type fs-8 text-main">Diễn viên chính</div>
                             </div>
-                            <div class="col-2 text-center ">
+                            <div class="col-md-2 col-4 text-center ">
                                 <div class="action-img rounded-circle ">
                                     <img src="./src/assets/img/actor4.jpg" class="rounded-circle " alt="">
                                 </div>
                                 <div class="action-name mt-3">Sea Gunn</div>
                                 <div class="action-type fs-8 text-main">Diễn viên chính</div>
                             </div>
-                            <div class="col-2 text-center ">
+                            <div class="col-md-2 col-4 text-center ">
                                 <div class="action-img rounded-circle ">
                                     <img src="./src/assets/img/actor5.jpg" class="rounded-circle " alt="">
                                 </div>
@@ -161,7 +161,7 @@ function moviesDetail(data, id) {
 
                 </div>
             </div>
-            <div class="player-content col-3 my-4">
+            <div class="player-content col-12 col-xl-3 my-4">
                 <div class="player-content-rank fs-8">
                     <h3 class="text-center">Bảng xếp hạng</h3>
                     <ul class="list-unstyled ">

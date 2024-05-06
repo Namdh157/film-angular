@@ -14,6 +14,7 @@ import {
     accountController
 }
 from './src/app/controllers/AdminController.js';
+import mainJs from './src/assets/js/main.js';
 // tạo route
 angular.module('film-fpt', ['ngRoute']).config(['$routeProvider', ($routeProvider) => {
     $routeProvider.when('/', {
@@ -37,6 +38,7 @@ angular.module('film-fpt', ['ngRoute']).config(['$routeProvider', ($routeProvide
     }).when('/dang-xuat', {
         template: '',
         controller: function ($location, $rootScope) {
+            mainJs();
             localStorage.removeItem('account');
             $location.path('/');
             $rootScope.$broadcast('checkAccount');
@@ -47,6 +49,7 @@ angular.module('film-fpt', ['ngRoute']).config(['$routeProvider', ($routeProvide
     }).when('/profile', {
         templateUrl: './src/app/views/public/profile.html',
         controller: function ($scope) {
+            mainJs();
             $scope.account = JSON.parse(localStorage.getItem('account'));
         }
     }).when('/detail/:title', {
@@ -55,6 +58,7 @@ angular.module('film-fpt', ['ngRoute']).config(['$routeProvider', ($routeProvide
     }).when('/profile/bookmark', {
         templateUrl: './src/app/views/public/bookmark.html',
         controller: function ($scope, $http, $timeout) {
+            mainJs();
             $scope.account = JSON.parse(localStorage.getItem('account'));
             $http.get('https://data-film-1.onrender.com/bookmark').then(($res) => {
                 const data = $res.data;
@@ -307,6 +311,12 @@ angular.module('film-fpt').component('headerComponent', {
         $scope.$on('$locationChangeStart', function () {
             if ($location.path().includes('/dang-ki') || $location.path().includes('/dang-nhap')) $scope.isShow = false;
             else $scope.isShow = true;
+        });
+        const itemNav =  document.querySelectorAll('.navs');
+        itemNav.forEach(function (item) {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            })
         });
     }
 });
